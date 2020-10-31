@@ -66,9 +66,9 @@
 </ul>
 <p>感觉好像做了很多无用功啊。但是后面用就高效率了</p>
 <p>感觉有些太微小的细节更不不用考虑啊，所以啊不用花费那么多时间啊。</p>
-<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201030222231596.png" alt="image-20201030222231596"></p>
-<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201030222402760.png" alt="image-20201030222402760"></p>
-<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201030222540525.png" alt="image-20201030222540525"></p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201030222231596.png" alt="image-20201030222231596" style="zoom:50%;"></p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201030222402760.png" alt="image-20201030222402760" style="zoom: 50%;"></p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201030222540525.png" alt="image-20201030222540525" style="zoom: 80%;"></p>
 <hr>
 <h4><span id="202029-ta-ma-de-gao-wan-huan-shi-gong-zuo-suan-qiu-liao">202029  他妈的：搞完还是工作算求了</span><a href="#202029-ta-ma-de-gao-wan-huan-shi-gong-zuo-suan-qiu-liao" class="header-anchor">#</a></h4><p><strong>Planning:</strong></p>
 <p>难道我就不能简简单单的做科研吗？</p>
@@ -1183,45 +1183,6 @@ matplotlib.plot的基础绘图流程：</li>
       </tags>
   </entry>
   <entry>
-    <title>此时我的内心只剩下灰色地带</title>
-    <url>/2020/10/31/%E6%AD%A4%E6%97%B6%E6%88%91%E7%9A%84%E5%86%85%E5%BF%83%E5%8F%AA%E5%89%A9%E4%B8%8B%E7%81%B0%E8%89%B2%E5%9C%B0%E5%B8%A6/</url>
-    <content><![CDATA[<h1><span id="20201031-mo-sha-zui-hou-yi-si-si-de-shan-liang-he-chun-zhen">20201031 抹杀最后一丝丝的善良和纯真</span><a href="#20201031-mo-sha-zui-hou-yi-si-si-de-shan-liang-he-chun-zhen" class="header-anchor">#</a></h1><ol>
-<li><p>看来还是我还是对人性抱有那么一丝丝的善良</p>
-<p>两个晚上的失眠，两个晚上的见证人性。我才发现人性（每个人都一样，我也避免不了）</p>
-<p>我在也做不了好人了，我原来觉得我还是可以简简单单的做自己的事情。</p>
-<p>现在才发现每个人都是坏人（每个人身上都透露出丑恶)</p>
-<p>原来我没有想伤害任何人，到最后我才发现受伤的都是我。</p>
-</li>
-<li><p>人性本恶</p>
-<ol>
-<li>现在想想自己，我觉得恶心。</li>
-<li>过去我觉得别恶心，现在觉得恶心的还是我</li>
-<li>我从没有想要伤害谁，最后才发现受伤的是我</li>
-</ol>
-</li>
-<li><p>人性本恶</p>
-<ol>
-<li>我才发现人性的恶，恶，恶， 恶，恶</li>
-<li>没有谁是好人，我现在才发现，我的经历在告诉我：你的每一句话，每一次动作都无比的恶心。</li>
-</ol>
-</li>
-<li><p>人性本恶</p>
-<ol>
-<li>以后，我再也不会做没有任何回报的事情和话了</li>
-<li>以后，我再也不会做一个纯真的自己了</li>
-<li>以后，我再也不会相信人性里面的商量了</li>
-<li>以后，我和任何人只有金钱，利益了</li>
-<li>以后，我对世界剩下权利和名利</li>
-</ol>
-</li>
-</ol>
-<p><img src="/2020/10/31/%E6%AD%A4%E6%97%B6%E6%88%91%E7%9A%84%E5%86%85%E5%BF%83%E5%8F%AA%E5%89%A9%E4%B8%8B%E7%81%B0%E8%89%B2%E5%9C%B0%E5%B8%A6/image-20201031082948586.png" alt="image-20201031082948586" style="zoom: 25%;"></p>
-]]></content>
-      <tags>
-        <tag>致自己</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>科研之材料清单</title>
     <url>/2020/10/30/%E7%A7%91%E7%A0%94%E4%B9%8B%E6%9D%90%E6%96%99%E6%B8%85%E5%8D%95/</url>
     <content><![CDATA[]]></content>
@@ -1253,7 +1214,8 @@ matplotlib.plot的基础绘图流程：</li>
     <url>/2020/10/12/%E5%8F%AF%E8%A7%86%E5%8C%96%E4%B9%8Bpyecharts/</url>
     <content><![CDATA[<h1><span id="pyecharts">PyEcharts</span><a href="#pyecharts" class="header-anchor">#</a></h1><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">1. 确定图类型</span><br><span class="line">	调用类，或者函数</span><br><span class="line">	确定参数</span><br><span class="line">2. 导入数据</span><br></pre></td></tr></tbody></table></figure>
 <p><a href="https://www.bilibili.com/video/BV1E7411w7Zq?p=17">https://www.bilibili.com/video/BV1E7411w7Zq?p=17</a></p>
-]]></content>
+<h2><span id="sheng-fen">省份</span><a href="#sheng-fen" class="header-anchor">#</a></h2><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h2><span id="cheng-shi">城市</span><a href="#cheng-shi" class="header-anchor">#</a></h2>]]></content>
   </entry>
   <entry>
     <title>科研之材料收集</title>
