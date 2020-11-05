@@ -4,11 +4,7 @@
     <title>学习の历程</title>
     <url>/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/</url>
     <content><![CDATA[<p>记录生活</p>
-<p>培养匠心精神，好好的工作，努力的赚钱</p>
-<p>活着就是为了赚钱</p>
-<p>我现在看到很清楚了，这个世界上，人与人之间还是利益最重要，活的通透点，我们之间之间只剩下利益。各取所需。</p>
-<p>此刻起，我在这里，我和这个世界的大多数人只剩下利益了。我不需要任何东西，我只需要利益。</p>
-<p>此刻起，有的人永远没有感情，有的人可以托付真心。</p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201104191815960.png" alt="image-20201104191815960" style="zoom:33%;"></p>
 <a id="more"></a>
 <h2><span id="202011-paper-paper-paper">202011 Paper Paper Paper</span><a href="#202011-paper-paper-paper" class="header-anchor">#</a></h2><p><strong>Week 1: HSR results</strong></p>
 <ol>
@@ -45,6 +41,175 @@
 </li>
 </ol>
 <p>Week 3: Writting</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11月4日</td>
+<td>数据准备</td>
+<td>地图准备</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11月5日</td>
+<td>绘图</td>
+<td>分布特征和流动特征</td>
+<td>流动特征</td>
+<td>流向图</td>
+<td>地图</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>城市等级之间</td>
+<td>城市群</td>
+<td>桑基图</td>
+<td>（可选）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11月6日</td>
+<td>节点重要性排序</td>
+<td>PageRank</td>
+<td>地图</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>表格</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11月7日</td>
+<td>空间集聚性</td>
+<td>全局相关性</td>
+<td>图</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>具备相关性</td>
+<td>表格</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11月8日 -  11月9日</td>
+<td>空间自相关模型</td>
+<td>权重矩阵</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>算法</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11月10日 -  11月15日</td>
+<td>完成方法（英文为主，中文简略）</td>
+<td>结果分析</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3><span id="planning-of-week-45-be-done"><strong>planning of week 45 be done!~</strong></span><a href="#planning-of-week-45-be-done" class="header-anchor">#</a></h3><ul>
 <li>[ ] Research<ul>
 <li>[ ] day1: figure &amp; Table</li>
@@ -55,6 +220,7 @@
 <li>[ ] English</li>
 <li>[ ] Reading</li>
 </ul>
+<h3><span id="1104">1104</span><a href="#1104" class="header-anchor">#</a></h3><p>今天我才认识到，</p>
 <h3><span id="1103-ren-xing">1103 人性</span><a href="#1103-ren-xing" class="header-anchor">#</a></h3><p>人性就是给别人挖了一个洞，你还不得不心甘情愿的往里面跳。这种人性最高明了。人就是逃不掉对利益，金钱，权势的诱惑。</p>
 <h3><span id="20201102-hao-hao-de-gong-zuo-hao-hao-de-gao-kpi-jiu-hui-zhuan-hen-duo-hen-duo-de-qian">20201102  好好的工作，好好的搞KPI, 就会赚很多很多的钱</span><a href="#20201102-hao-hao-de-gong-zuo-hao-hao-de-gao-kpi-jiu-hui-zhuan-hen-duo-hen-duo-de-qian" class="header-anchor">#</a></h3><p>Excepting map, I get all tables and figures.</p>
 <p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201102223605713.png" alt="image-20201102223605713" style="zoom: 67%;"></p>
@@ -106,14 +272,7 @@
 </ul>
 </li>
 </ul>
-<h3><span id="20201101-sha-yi-bai-ren-hao-ren-ye-bu-yao-zai-xiang-xin-zhe-ren-dao-you-shan-yi">20201101 杀一百人好人，也不要在相信这人道有善意。</span><a href="#20201101-sha-yi-bai-ren-hao-ren-ye-bu-yao-zai-xiang-xin-zhe-ren-dao-you-shan-yi" class="header-anchor">#</a></h3><ol>
-<li>我觉得还是对人性抱有那么一丝丝的善良，此刻我看见的都是利益。人与人之间的利益。此刻起，我们只剩下利益了，再也没有任何东西了。</li>
-</ol>
-<p>人与人之间的关系终究是利益为纽带。</p>
-<ol>
-<li>工作就是工作。不要有任何的感情，别人也不会含有感情。强者为王。</li>
-</ol>
-<hr>
+<h3><span id="20201101">20201101</span><a href="#20201101" class="header-anchor">#</a></h3><hr>
 <h4><span id="202031">202031</span><a href="#202031" class="header-anchor">#</a></h4><p><strong>Planning:</strong> </p>
 <p><strong>Done:</strong></p>
 <pre><code>1. pychart (Map, Geo to draw a map at province level and at city level)(city name file , position, parameter)
@@ -1217,7 +1376,14 @@ matplotlib.plot的基础绘图流程：</li>
   <entry>
     <title>规划—-技能Post_Get</title>
     <url>/2020/10/09/%E8%A7%84%E5%88%92%E2%80%94-%E6%8A%80%E8%83%BDPost-Get/</url>
-    <content><![CDATA[<h1><span id="202010">202010</span><a href="#202010" class="header-anchor">#</a></h1><h2><span id="pyecharts-map">Pyecharts—Map</span><a href="#pyecharts-map" class="header-anchor">#</a></h2><p>行政边界</p>
+    <content><![CDATA[<h1><span id="202010">202010</span><a href="#202010" class="header-anchor">#</a></h1><h2><span id="list">List</span><a href="#list" class="header-anchor">#</a></h2><ol>
+<li>origin绘图模板</li>
+<li>Python绘图模型显示数值</li>
+<li>ArcGIS绘图地图</li>
+<li>GeoDa 分析空间数据</li>
+</ol>
+<p>不同数据间的汇合：键值的同一化</p>
+<h2><span id="pyecharts-map">Pyecharts—Map</span><a href="#pyecharts-map" class="header-anchor">#</a></h2><p>行政边界</p>
 <p><a href="https://blog.csdn.net/Jarry_cm/article/details/101464556?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight">https://blog.csdn.net/Jarry_cm/article/details/101464556?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight</a></p>
 <p><a href="https://blog.csdn.net/sinat_34117508/article/details/93186175">https://blog.csdn.net/sinat_34117508/article/details/93186175</a></p>
 <p><a href="https://gallery.pyecharts.org/#/Calendar/calendar_heatmap">https://gallery.pyecharts.org/#/Calendar/calendar_heatmap</a></p>
@@ -1252,7 +1418,10 @@ matplotlib.plot的基础绘图流程：</li>
   <entry>
     <title>科研之材料清单</title>
     <url>/2020/10/30/%E7%A7%91%E7%A0%94%E4%B9%8B%E6%9D%90%E6%96%99%E6%B8%85%E5%8D%95/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1><span id="zi-yuan">资源</span><a href="#zi-yuan" class="header-anchor">#</a></h1><h2><span id="cheng-shi-she-hui-jing-ji-she-hui">城市社会经济社会</span><a href="#cheng-shi-she-hui-jing-ji-she-hui" class="header-anchor">#</a></h2><ol>
+<li>知网免费下载</li>
+</ol>
+<h2><span id="di-tu-shp">地图shp</span><a href="#di-tu-shp" class="header-anchor">#</a></h2>]]></content>
       <tags>
         <tag>清单</tag>
       </tags>
@@ -2630,7 +2799,13 @@ L_1(x_i,x_j) = max(|x_i^{(l)}-x_j^{(l)}|)</script><h2><span id="k-zhi-de-xuan-ze
     <url>/2020/09/11/%E7%A7%91%E7%A0%94-%E7%A7%91%E7%A0%94%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>记录</p>
 <a id="more"></a>
-<h1><span id="2020">2020</span><a href="#2020" class="header-anchor">#</a></h1><h2><span id="11-results">11 Results</span><a href="#11-results" class="header-anchor">#</a></h2><h2><span id="10-built-a-pipeline-to-handle-complex-data-at-city-level">10 built a pipeline to handle complex data at city level</span><a href="#10-built-a-pipeline-to-handle-complex-data-at-city-level" class="header-anchor">#</a></h2><h3><span id="1030-improving-efficiency">1030 improving efficiency</span><a href="#1030-improving-efficiency" class="header-anchor">#</a></h3><ol>
+<h1><span id="2020">2020</span><a href="#2020" class="header-anchor">#</a></h1><h2><span id="11-results">11 Results</span><a href="#11-results" class="header-anchor">#</a></h2><h3><span id="1104-ba-shu-ju-zhun-bei-hao-ba-shu-ju-zhun-bei-hao-bu-yao-he-fen-xi-tong-bu">1104 把数据准备好，把数据准备好（不要和分析同步)</span><a href="#1104-ba-shu-ju-zhun-bei-hao-ba-shu-ju-zhun-bei-hao-bu-yao-he-fen-xi-tong-bu" class="header-anchor">#</a></h3><p>数据分析<br>    Step1:<br>        清洗理解数据<br>        把数据文件准备好<br>    Step2:<br>        分析<br>            这个部分如果没有什么大变动不要修改文件了</p>
+<p>科研进度慢的原因：</p>
+<pre><code>1. 多次尝试错误想法。主要是没有很好的理解数据。
+ 2. 准备文件。 一开始数据文件没有一次准备好，反反复复的修改。一定要一开始就把文件准备好，后期分析，没有什么大变动，就不会修改了。**一定是先把数据准备好，后期不改动了。**
+ 3. 过得纠结细节。一些样本的保留和删除一直犹豫（这个是无关紧要的啊，这里我纠结了很久）。这不是什么大问题，根本不需要额外讨论
+</code></pre><p>不同数据间拼接，一定要把键值修改成统一。现在已经搞定了。</p>
+<h2><span id="10-built-a-pipeline-to-handle-complex-data-at-city-level">10 built a pipeline to handle complex data at city level</span><a href="#10-built-a-pipeline-to-handle-complex-data-at-city-level" class="header-anchor">#</a></h2><h3><span id="1030-improving-efficiency">1030 improving efficiency</span><a href="#1030-improving-efficiency" class="header-anchor">#</a></h3><ol>
 <li><p>data: do not think about too many details(delete)</p>
 <p>我发现我就是考虑太多的details（小的，细微的地方，没什么影响的)</p>
 <p>newall1 = newall1[newall1[‘All_inflow-all-GDP’]!=0]</p>
