@@ -40,6 +40,17 @@
 <p>《Spatially varying patterns of afforestation/reforestation and socioeconomic factors in China: a geographically weighted regression approach 》</p>
 </li>
 </ol>
+<h3><span id="planning-of-week-46-be-done"><strong>planning of week 46 be done!~</strong></span><a href="#planning-of-week-46-be-done" class="header-anchor">#</a></h3><ul>
+<li>[ ] Research<ul>
+<li>[ ] data analysis</li>
+</ul>
+</li>
+<li>[ ] English<ul>
+<li>[ ] listening</li>
+</ul>
+</li>
+<li>[ ] reading</li>
+</ul>
 <p>Week 3: Writting</p>
 <div class="table-container">
 <table>
@@ -52,48 +63,44 @@
 <th></th>
 <th></th>
 <th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>11月4日</td>
+<td>11月8日</td>
 <td>数据准备</td>
 <td>地图准备</td>
+<td>√</td>
+<td>GeoDa</td>
+<td>√</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>11月5日</td>
+<td>11月9日</td>
 <td>绘图</td>
-<td>分布特征和流动特征</td>
+<td>分布特征</td>
 <td>流动特征</td>
 <td>流向图</td>
 <td>地图</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td></td>
-<td>城市等级之间</td>
-<td>城市群</td>
-<td>桑基图</td>
-<td>（可选）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
+<td>流动特征</td>
 <td></td>
 <td></td>
 <td></td>
@@ -101,10 +108,21 @@
 <td></td>
 </tr>
 <tr>
-<td>11月6日</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11月10日</td>
 <td>节点重要性排序</td>
 <td>PageRank</td>
 <td>地图</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -117,6 +135,17 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>城市等级之间</td>
+<td>城市群</td>
+<td>桑基图</td>
+<td>（可选）</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
@@ -126,12 +155,14 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
-<td>11月7日</td>
+<td>11月11日</td>
 <td>空间集聚性</td>
 <td>全局相关性</td>
 <td>图</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -144,20 +175,23 @@
 <td></td>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 <td></td>
 </tr>
 <tr>
-<td>11月8日 -  11月9日</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11月12日 -  11月13日</td>
 <td>空间自相关模型</td>
 <td>权重矩阵</td>
+<td>可能不行</td>
 <td></td>
 <td></td>
 <td></td>
@@ -171,17 +205,20 @@
 <td></td>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 <td></td>
 </tr>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -198,8 +235,10 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -211,15 +250,19 @@
 </table>
 </div>
 <h3><span id="planning-of-week-45-be-done"><strong>planning of week 45 be done!~</strong></span><a href="#planning-of-week-45-be-done" class="header-anchor">#</a></h3><ul>
-<li>[ ] Research<ul>
-<li>[ ] day1: figure &amp; Table</li>
-<li>[ ] day2-3: result analysis</li>
-<li>[ ] day4: effect 机制</li>
+<li>[x] Research<ul>
+<li>[x] day1: figure &amp; Table</li>
+<li>[x] day2-3: result analysis</li>
+<li>[x] day4: effect 机制</li>
 </ul>
 </li>
-<li>[ ] English</li>
-<li>[ ] Reading</li>
+<li>[x] English</li>
+<li>[x] Reading</li>
 </ul>
+<h4><span id="1108">1108</span><a href="#1108" class="header-anchor">#</a></h4><p>两天半写完了报告，一天也可以的，只要把图和表准备好。</p>
+<p>so easy</p>
+<p>so easy</p>
+<h4><span id="1107-report">1107 report:</span><a href="#1107-report" class="header-anchor">#</a></h4><p>终于写完了，明天收尾。</p>
 <h4><span id="1106-report">1106 report：</span><a href="#1106-report" class="header-anchor">#</a></h4><p>写了八页的中文报告。明天继续。周末就能完成了。明天回归分析结果的分析。</p>
 <p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201106195708183.png" alt="image-20201106195708183"></p>
 <p>idea-&gt;data analysis -&gt;writting</p>
@@ -1455,7 +1498,14 @@ matplotlib.plot的基础绘图流程：</li>
 <h2><span id="cheng-shi">城市</span><a href="#cheng-shi" class="header-anchor">#</a></h2><h2><span id="map">Map</span><a href="#map" class="header-anchor">#</a></h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pyecharts <span class="keyword">import</span> options <span class="keyword">as</span> opts</span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Map</span><br><span class="line"><span class="keyword">from</span> pyecharts.faker <span class="keyword">import</span> Faker</span><br><span class="line"></span><br><span class="line"><span class="comment"># map 函数 地图主要用于地理区域数据的可视化。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># map.add(name, attr, value, maptype='china', is_roam=True, is_map_symbol_show=True, **kwargs)</span></span><br><span class="line"></span><br><span class="line">c = (</span><br><span class="line">    Map()</span><br><span class="line">    .add(</span><br><span class="line">        <span class="string">"商家A"</span>,</span><br><span class="line">        [list(z) <span class="keyword">for</span> z <span class="keyword">in</span> zip(Faker.guangdong_city, Faker.values())],</span><br><span class="line">        value,maptype = <span class="string">"china-cities"</span>,</span><br><span class="line">        label_opts=opts.LabelOpts(is_show=<span class="literal">False</span>),</span><br><span class="line">        is_label_show=<span class="literal">True</span> , //显示文本吗</span><br><span class="line">    )</span><br><span class="line">    .set_global_opts(</span><br><span class="line">        title_opts=opts.TitleOpts(title=<span class="string">"Map-中国地图（带城市）"</span>),</span><br><span class="line">        visualmap_opts=opts.VisualMapOpts(),</span><br><span class="line">        is_piecewise=<span class="literal">True</span>,//是否分段</span><br><span class="line">    )</span><br><span class="line">    .render(<span class="string">"map_china_cities.html"</span>)</span><br><span class="line">)</span><br></pre></td></tr></tbody></table></figure>
 <h2><span id="geo">Geo</span><a href="#geo" class="header-anchor">#</a></h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pyecharts <span class="keyword">import</span> options <span class="keyword">as</span> opts</span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Geo</span><br><span class="line"><span class="keyword">from</span> pyecharts .globals <span class="keyword">import</span> ChartType, SymbolType, GeoType</span><br><span class="line"><span class="keyword">from</span> snapshot_selenium <span class="keyword">import</span> snapshot <span class="keyword">as</span> driver</span><br><span class="line"><span class="keyword">from</span> pyecharts.render <span class="keyword">import</span> make_snapshot</span><br><span class="line">geo = Geo()</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 新增坐标点，添加名称跟经纬度</span></span><br><span class="line">geo.add_coordinate(name=<span class="string">"China"</span>,longitude=<span class="number">104.195</span>,latitude=<span class="number">35.675</span>)</span><br><span class="line">geo.add_coordinate(name=<span class="string">"Australia"</span>,longitude=<span class="number">100.195</span>,latitude=<span class="number">35.675</span>)</span><br><span class="line"><span class="comment"># 添加数据项</span></span><br><span class="line">geo.add_schema(maptype=<span class="string">"china"</span>)</span><br><span class="line">geo.add(<span class="string">""</span>,[(<span class="string">"Australia"</span>,<span class="number">128326</span>),</span><br><span class="line">(<span class="string">"China"</span>,<span class="number">109</span>),</span><br><span class="line">],type_=ChartType.EFFECT_SCATTER)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 绘制流向</span></span><br><span class="line">geo.add(<span class="string">"流向图"</span>,[</span><br><span class="line">(<span class="string">"Australia"</span>,<span class="string">"China"</span>),</span><br><span class="line">],</span><br><span class="line">type_= GeoType.LINES,</span><br><span class="line">effect_opts=opts.EffectOpts(symbol=SymbolType.ARROW,symbol_size=<span class="number">5</span>,color=<span class="string">"yellow"</span>),</span><br><span class="line">linestyle_opts=opts.LineStyleOpts(curve=<span class="number">0.2</span>),</span><br><span class="line">)</span><br><span class="line"> </span><br><span class="line">geo.set_series_opts(label_opts=opts.LabelOpts(is_show=<span class="literal">False</span>))</span><br><span class="line">geo.set_global_opts(visualmap_opts=opts.VisualMapOpts(max_=<span class="number">130000</span>),title_opts=opts.TitleOpts(title=<span class="string">"mygeo"</span>))</span><br><span class="line">geo.render(<span class="string">'test.html'</span>)</span><br><span class="line">geo.render(<span class="string">'test.png'</span>)</span><br><span class="line"><span class="comment">#make_snapshot(driver,geo.render(), "bar.png")</span></span><br></pre></td></tr></tbody></table></figure>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> pyecharts <span class="keyword">import</span> Geo</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment"># geo.add(name, attr, value, type="scatter", maptype='china', coordinate_region='中国', symbol_size=12, border_color="#111", geo_normal_color="#323c48", geo_emphasis_color="#2a333d", geo_cities_coords=None, is_roam=True, **kwargs)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 常用参数说明：</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数	接收值	说明</span></span><br><span class="line"><span class="comment"># name	str	图例名称</span></span><br><span class="line"><span class="comment"># attr	list	属性名称</span></span><br><span class="line"><span class="comment"># value	list	属性所对应的值</span></span><br><span class="line"><span class="comment"># type	str	图例类型，有'scatter','effectScatter','heatmap'可选。默认为'scatter'</span></span><br><span class="line"><span class="comment"># maptype	str	地图类型</span></span><br><span class="line"><span class="comment"># coordinate_region	str	城市坐标所属国家</span></span><br><span class="line"><span class="comment"># symbol_size	int	标记图形大小。默认为12</span></span><br><span class="line"><span class="comment"># border_color	str	地图边界颜色。默认为'#111'</span></span><br><span class="line"><span class="comment"># geo_normal_color	str	正常状态下地图区域的颜色。默认为'#323c48'</span></span><br><span class="line"><span class="comment"># geo_emphasis_color	str	高亮状态下地图区域的颜色。默认为'#2a333d'</span></span><br><span class="line"><span class="comment"># geo_cities_coords	dict	用户自定义地区经纬度，类似如{'阿城':[126.58,45.32],}这样的字典。</span></span><br><span class="line"><span class="comment"># is_roam	bool	是否开启鼠标缩放和平移漫游。'scale'缩放、'move'平移、'True'都开启；默认为True。</span></span><br><span class="line"><span class="comment"># Geo 函数的使用：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#读取数据</span></span><br><span class="line">datafile = <span class="string">u'D:\\pythondata\\travel\\travel_data.xlsx'</span></span><br><span class="line">data = pd.read_excel(datafile)</span><br><span class="line">attr = data[<span class="string">'City'</span>]</span><br><span class="line">value = data[<span class="string">'Score'</span>]</span><br><span class="line"> </span><br><span class="line">geo = Geo(<span class="string">"♡♡♡  往后余生，踏遍山河  ♡♡♡"</span>, title_color=<span class="string">"#2E2E2E"</span>,</span><br><span class="line">          title_text_size=<span class="number">24</span>,title_top=<span class="number">20</span>,title_pos=<span class="string">"center"</span>, width=<span class="number">1300</span>,height=<span class="number">600</span>, </span><br><span class="line">          background_color=<span class="string">'#F6CEF5'</span>)</span><br><span class="line">geo.add(<span class="string">""</span>, attr, value, type=<span class="string">"effectScatter"</span>, is_random=<span class="literal">True</span>, visual_range=[<span class="number">0</span>, <span class="number">100</span>], </span><br><span class="line">        maptype=<span class="string">'china'</span>,visual_text_color=<span class="string">"#FF0000"</span>, geo_normal_color=<span class="string">"#6E6E6E"</span>,geo_emphasis_color=<span class="string">'#F5D0A9'</span>,</span><br><span class="line">        symbol_size=<span class="number">8</span>, effect_scale=<span class="number">5</span>, is_visualmap=<span class="literal">True</span>)</span><br><span class="line">        <span class="comment"># Geo 图类型，有 scatter, effectScatter, heatmap, lines 4 种，建议使用 </span></span><br><span class="line">        <span class="comment"># GeoType.GeoType.EFFECT_SCATTER，GeoType.HEATMAP，GeoType.LINES</span></span><br><span class="line">geo.render(path=<span class="string">u'D:\\pythondata\\travel\\往后余生.html'</span>)<span class="comment">#生成html文件</span></span><br></pre></td></tr></tbody></table></figure>
-]]></content>
+<h1><span id="geppandas">Geppandas</span><a href="#geppandas" class="header-anchor">#</a></h1><p>shp文件的处理</p>
+<h1><span id="arcgis">ArcGIS</span><a href="#arcgis" class="header-anchor">#</a></h1><p>这个傻瓜式软件好啊。不管了，以后就用这个了。</p>
+<p>尺寸，标记，流向图和散点图</p>
+<h1><span id="r">R</span><a href="#r" class="header-anchor">#</a></h1>]]></content>
+      <tags>
+        <tag>Pyecharts</tag>
+        <tag>Geopandas</tag>
+      </tags>
   </entry>
   <entry>
     <title>科研之材料收集</title>
