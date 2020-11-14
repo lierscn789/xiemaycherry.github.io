@@ -20,14 +20,6 @@
     <title>学习の历程</title>
     <url>/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/</url>
     <content><![CDATA[<p>记录生活</p>
-<ol>
-<li>Studying English well</li>
-<li>Writting</li>
-<li>人和人之间还是明算账。老板就是老板，同事只能是同事</li>
-</ol>
-<p>自力更生</p>
-<p>高质量输出</p>
-<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201104191815960.png" alt="image-20201104191815960" style="zoom:33%;"></p>
 <a id="more"></a>
 <h2><span id="202011-paper-paper-paper">202011 Paper Paper Paper</span><a href="#202011-paper-paper-paper" class="header-anchor">#</a></h2><p><strong>Week 1: HSR results</strong></p>
 <ol>
@@ -63,6 +55,133 @@
 <p>《Spatially varying patterns of afforestation/reforestation and socioeconomic factors in China: a geographically weighted regression approach 》</p>
 </li>
 </ol>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>时间表</th>
+<th>分类</th>
+<th>任务细化</th>
+<th>Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Daily</td>
+<td>11.13-11:23</td>
+<td>10 paper/day</td>
+<td>Literature review: extract from  five papers</td>
+<td>one weekends</td>
+</tr>
+<tr>
+<td></td>
+<td>11.12 everning</td>
+<td>literature of talent migration</td>
+<td>1. build talent attraction index based census data or survey through PCA，etc.2.  And influenced element of talent attraction includes economy,  industry development, income level, working environment, and living environment.  3. the talent mobility pattern and the influencing factors.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>two days</td>
+<td>description of talent network</td>
+<td>Method &amp; Figure &amp; Result</td>
+<td>√（×)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>three days</td>
+<td>Character of talent network</td>
+<td>Method &amp; Figure &amp; Table  &amp; Result</td>
+<td>√(×）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>three days</td>
+<td>Identify determinants of talent  migration</td>
+<td>Method &amp; Figure &amp; Table  &amp; Result</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>two</td>
+<td>Predicting economic development  by talent migration</td>
+<td>Method &amp; Table &amp; Result</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4><span id="1114">1114</span><a href="#1114" class="header-anchor">#</a></h4><p>GWO VS OLS</p>
+<p>What a great regression model? not easy!!! Need dignose, Need experience,</p>
+<p>多重共线性，效果，误差，</p>
+<p>统计量（零假设，显著性（P-value))</p>
+<p>GWO(多重共线性)</p>
+<p>First, OLS(variable), GWR model</p>
+<p>variabel standardization and normalization</p>
+<h4><span id="1113">1113</span><a href="#1113" class="header-anchor">#</a></h4><p>Figure Map</p>
+<p>Network feature(problem?)</p>
+<p>The pagerank algorithm is excellent.</p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/MyBlog\MyBlog\hexo\source\_posts\学习Daily\image-20201114220630487.png" alt="image-20201114220630487"></p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/MyBlog\MyBlog\hexo\source\_posts\学习Daily\image-20201114220647583.png" alt="image-20201114220647583"></p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/MyBlog\MyBlog\hexo\source\_posts\学习Daily\image-20201114220701606.png" alt="image-20201114220701606"></p>
+<h4><span id="20201112">20201112</span><a href="#20201112" class="header-anchor">#</a></h4><p>data &amp; Figure &amp; Table(OK,Ok, ok, ok)</p>
+<p>Literature review:</p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201112220145087.png" alt="image-20201112220145087" style="zoom:67%;"></p>
+<p>把最近的三篇文章的引用，整理excel+abstract 即可以。（也就哪些研究）关键是这几篇文章也十分的相似啊。</p>
+<p>​        人才资本论</p>
+<p>​        人才流动理论</p>
+<p>​        中国研究</p>
+<p>​        人才流动（少）</p>
+<p>​        big data </p>
 <h3><span id="planning-of-week-46-be-done"><strong>planning of week 46 be done!~</strong></span><a href="#planning-of-week-46-be-done" class="header-anchor">#</a></h3><p>Assuming you can not do anything or saying any words, you can try.</p>
 <ul>
 <li>[ ] Research<ul>
@@ -1496,6 +1615,50 @@ matplotlib.plot的基础绘图流程：</li>
       </categories>
       <tags>
         <tag>规划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>回归分析说明</title>
+    <url>/2020/11/14/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<h1><span id="theory">Theory</span><a href="#theory" class="header-anchor">#</a></h1><p>为了理解、解释、预测某个问题，我们会进行回归分析。</p>
+<h1><span id="explaining">Explaining</span><a href="#explaining" class="header-anchor">#</a></h1><h2><span id="adjusted-r-squared-xiao-zheng-ke-jue-xi-shu">Adjusted R-Squared(校正可决系数)</span><a href="#adjusted-r-squared-xiao-zheng-ke-jue-xi-shu" class="header-anchor">#</a></h2><p>range from 0 to 1</p>
+<ol>
+<li>bad or suitable model</li>
+<li>explanatory(expreesion) ability</li>
+</ol>
+<p>如果“校正可决系数”的值为 0.39，则表示您的模型（解释变量使用线性回归建模）可解释因变量中大约 39% 的变化。换句话说，该模型表达了大约 39% 的入室盗窃案件。</p>
+<h2><span id="coefficient">Coefficient</span><a href="#coefficient" class="header-anchor">#</a></h2><p>评估模型中的每一个解释变量：系数、概率或稳健概率和方差膨胀因子 (VIF)。</p>
+<h3><span id="coefficient">Coefficient</span><a href="#coefficient" class="header-anchor">#</a></h3><p>每个解释变量的<a href="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/regression-analysis-basics.htm#GUID-E5E0B4A5-55B5-49F1-BE02-F1E4A1BFC641">系数</a>既反映它与因变量之间的关系强度，也反映它与因变量之间的关系类型。当与系数关联的符号为负时，该系数与因变量为负向关系.系数反映了所有其他解释变量保持不变时，关联的解释变量的每单位变化导致其因变量发生的预期变化量。例如，保持其他解释变量不变的情况下，人口普查区块每增加1人，入室盗窃系数就会增加 0.005。</p>
+<h3><span id="t-jian-ce">T检测</span><a href="#t-jian-ce" class="header-anchor">#</a></h3><p> 检验用来评估某个解释变量是否具有统计显著性。</p>
+<h3><span id="vif">VIF</span><a href="#vif" class="header-anchor">#</a></h3><p>通常，与大于 7.5 的 VIF 值关联的解释变量应逐一从回归模型中移除。例如，如果某回归模型中同时含有人口变量（人数）和就业变量（就业人数），那么，您会发现，这些变量很可能与较大的 VIF 值关联，从而表明这些变量讲述的是同一个故事，因此，您应将人口变量或就业变量从该模型中移除。</p>
+<h2><span id="mo-xing-xian-zhu-xing">模型显著性</span><a href="#mo-xing-xian-zhu-xing" class="header-anchor">#</a></h2><p>联合 F 统计量和联合卡方统计量均用于检验整个模型的统计显著性。只有在 Koenker (BP) 统计量（见下图）不具有统计显著性时，“联合 F 统计量”才可信。如果 Koenker (BP) 统计量具有显著性，应参考“联合卡方统计量”来确定整个模型的显著性。这两种检验的零假设均为模型中的解释变量不起作用。对于大小为 95% 的置信度，p 值（概率）小于 0.05 表示模型具有统计显著性。</p>
+<h2><span id="ping-gu-wen-tai">评估稳态。</span><a href="#ping-gu-wen-tai" class="header-anchor">#</a></h2><p>Koenker (BP) 统计量（Koenker 的标准化 Breusch-Pagan 统计量）是一种检验方法，用于确定模型的解释变量是否在地理空间和数据空间中都与因变量具有一致的关系。如果模型在地理空间中一致，由解释变量表示的空间进程在研究区（进程稳态）各位置处的行为也将一致。如果模型在数据空间中一致，则预测值与每个解释变量之间关系的变化不会随解释变量值的变化而变化（模型不存在异方差性）。</p>
+<p>该检验的零假设为所检验的模型是稳态的。对于大小为 95% 的置信度，p 值（概率）小于 0.05 表示模型具有统计学上的显著异方差性和/或非稳态。如果该检验的结果具有统计显著性，则需参考稳健系数标准差和概率来评估每个解释变量的效果。具有统计显著性非稳态的回归模型通常很适合进行<a href="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/geographically-weighted-regression.htm">地理加权回归</a> (GWR) 分析。</p>
+<h2><span id="ping-gu-mo-xing-pian-chai">评估模型偏差。</span><a href="#ping-gu-mo-xing-pian-chai" class="header-anchor">#</a></h2><p>arque-Bera 统计量用于指示<a href="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/regression-analysis-basics.htm#GUID-A90B0519-36FF-42AF-A6BF-D09E2C9C317C">残差</a>（已观测或已知的因变量值减去预测或估计值）是否呈正态分布。该检验的零假设为残差呈正态分布</p>
+<p>当该检验的 p 值（概率）较小（例如，对于大小为 95% 的置信度，其值小于 0.05）时，回归不会呈正态分布，并指示您的模型有偏差。</p>
+<p>如果残差还存在统计学上显著的空间自相关（请参阅下文），则偏差可能是<a href="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/regression-analysis-basics.htm#GUID-9916D83D-2334-499B-87A6-FA9F697DFD5D">模型指定错误</a>（该模型的某个关键变量缺失）的结果。从错误指定的 OLS 模型得到的结果是不可信的。如果尝试构建非线性关系模型、数据的某些异常值存在影响或者存在很强的<a href="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/h-heteroskedasticity.htm">异方差性</a>（请参阅上文），也可进行统计学上显著的 Jarque-Bera 检验。</p>
+<h2><span id="ping-gu-can-chai-kong-jian-zi-xiang-guan">评估残差空间自相关。</span><a href="#ping-gu-can-chai-kong-jian-zi-xiang-guan" class="header-anchor">#</a></h2><p>始终对回归残差运行<a href="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/spatial-autocorrelation.htm">空间自相关(Moran’s I)</a> 工具可确保回归残差在空间上随机分布。高残差和低残差（模型偏高预计值和偏低预计值）的统计显著性聚集表明模型（指定错误）中的某个关键变量缺失了。当模型错误设定时，OLS 结果不可信。</p>
+<h2><span id="six-list-of-check">six list of Check</span><a href="#six-list-of-check" class="header-anchor">#</a></h2><h3><span id="check-1-jie-shi-bian-liang-yu-yin-bian-liang-ju-you-yu-qi-de-guan-xi-fou">Check #1 解释变量与因变量具有预期的关系否？</span><a href="#check-1-jie-shi-bian-liang-yu-yin-bian-liang-ju-you-yu-qi-de-guan-xi-fou" class="header-anchor">#</a></h3><p>数具有+/-号</p>
+<h3><span id="check-2-jie-shi-bian-liang-dui-mo-xing-you-bang-zhu-fou">Check #2 解释变量对模型有帮助否？</span><a href="#check-2-jie-shi-bian-liang-dui-mo-xing-you-bang-zhu-fou" class="header-anchor">#</a></h3><p>显著性</p>
+<h3><span id="check-3-can-chai-shi-fou-you-kong-jian-ju-lei">Check #3 残差是否有空间聚类？</span><a href="#check-3-can-chai-shi-fou-you-kong-jian-ju-lei" class="header-anchor">#</a></h3><p><strong>空间自相关工具（Spatial Autocorrelation Tool）</strong></p>
+<h3><span id="check-4-mo-xing-shi-fou-chu-xian-liao-qing-xiang-xing">Check #4 模型是否出现了倾向性？</span><a href="#check-4-mo-xing-shi-fou-chu-xian-liao-qing-xiang-xing" class="header-anchor">#</a></h3><p>如果我们正确的构建了回归分析模型，那么模型的残差会符合完美的正态分布，其图形为钟形曲线。</p>
+<p>在 OLS 汇总报告中，有一个具有统计显著性的 Jarque-Bera 诊断表示模型是否出现偏差。如下图中是没有偏差的模型，如果有偏差，在篮框中会出现星号。</p>
+<h3><span id="check-5-jie-shi-bian-liang-zhong-cun-zai-rong-yu-ma">Check #5 解释变量中存在冗余吗？</span><a href="#check-5-jie-shi-bian-liang-zhong-cun-zai-rong-yu-ma" class="header-anchor">#</a></h3><p>OLS工具会为每个变量计算膨胀因子（Variance Inflation Factor，VIF），VIF 值是对变量冗余度的一种度量，可辅助决定在不削弱模型解释能力的情况下可从中移除哪些变量。根据经验，<strong>VIF 值超过 *7.5* 就有问题</strong>。</p>
+<h3><span id="check-6-ping-gu-mo-xing-de-xing-neng">Check #6 评估模型的性能</span><a href="#check-6-ping-gu-mo-xing-de-xing-neng" class="header-anchor">#</a></h3><p> <strong>矫正R2值</strong> 是评估解释变量对因变量建模的重要度量。</p>
+<h1><span id="gwr">GWR</span><a href="#gwr" class="header-anchor">#</a></h1><p>消息中提供了分析的详细信息，包括分析的要素数目、因变量和解释变量以及指定的相邻要素数。</p>
+<h2><span id="dignoe">Dignoe</span><a href="#dignoe" class="header-anchor">#</a></h2><p><img src="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/GUID-E38EDD69-6061-4DE4-AC6A-73304CDCE7CD-web.png" alt="连续模型类型的模型诊断"></p>
+<ul>
+<li>R2 - R 平方可用于检验拟合度。其值在 0.0 到 1.0 范围内变化，值越大越好。此值可解释为回归模型所涵盖的因变量方差的比例。R2 计算的分母为因变量值平方和。向模型中再添加一个解释变量不会更改分母但会更改分子；这将出现改善模型拟合的情况（但可能为假象）。请参阅下文中的“校正的 R2”。</li>
+<li>AdjR2 - 由于上述 R2 值问题，校正的 R 平方值的计算将按分子和分母的自由度对它们进行正规化。这具有对模型中变量数进行补偿的效果，因此校正的 R2 值通常小于 R2 值。但是，执行此校正时，无法将该值的解释作为所解释方差的比例。在 GWR 中，自由度的有效值是所使用邻域的函数，因此与全局模型（如<a href="https://pro.arcgis.com/zh-cn/pro-app/tool-reference/spatial-statistics/generalized-linear-regression.htm">广义线性回归 (GLR)</a>）相比，校正程度可能非常明显。因此，AICc 是对模型进行比较的首选方式。</li>
+<li>AICc - 可用于检验模型性能并比较回归模型。考虑到模型复杂性，具有较低 AICc 值的模型将更好地拟合观测数据。AICc 不是拟合度的绝对度量，但对于比较适用于同一因变量且具有不同解释变量的模型非常有用。如果两个模型的 AICc 值相差大于 3，具有较低 AICc 值的模型将被视为更佳的模型。将 GWR AICc 值与 GLR AICc 值进行比较是评估从全局模型 (GLR) 移动到局部回归模型 (GWR) 的优势的一种方法。</li>
+<li>Sigma 平方 - 此值为残差方差（标准差的平方）的最小二乘估计值。此统计值越小越好。此值为正规化残差平方和（残差平方和除以残差的有效自由度）。Sigma 平方用于 AICc 计算。</li>
+<li>Sigma 平方 MLE - 此值为残差方差（标准差的平方）的最大似然估计值 (MLE)。此统计值越小越好。可通过将残差平方和除以输入要素数量来计算该值。</li>
+<li>有效自由度 - 此值反映了拟合值的方差与系数估计值的偏差之间的折衷，与邻域大小的选择有关。邻域接近无穷大时，每个要素的地理权重都将接近 1，系数估计值与全局 GLR 模型的相应值将非常接近。对于较大的邻域，系数的有效数量将接近实际数量；局部系数估计值将具有较小的方差，但偏差将非常大。相反，邻域变小并接近零时，每个要素的地理权重都将接近零（回归点本身除外）。对于非常小的邻域，系数的有效数量为观测值的数量，局部系数估计值将具有较大方差但偏差较低。该有效数量用于计算多个其他诊断测量值。</li>
+</ul>
+<h3><span id="local-r2">Local R2</span><a href="#local-r2" class="header-anchor">#</a></h3><p>局部的R2，与全局R2的意义是一样的，范围在 0.0 与 1.0 之间，表示局部回归模型与观测所得 y 值的拟合程度。如果值非常低，则表示局部模型性能不佳。对 Local R2进行地图可视化，可以查看哪些位置 GWR 预测较准确和哪些位置不准确。以便为获知可能在回归模型中丢失的重要变量提供相关线索。</p>
+<h3><span id="coefficient">Coefficient</span><a href="#coefficient" class="header-anchor">#</a></h3>]]></content>
+      <tags>
+        <tag>回归分析</tag>
       </tags>
   </entry>
   <entry>
