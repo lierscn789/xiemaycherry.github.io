@@ -172,6 +172,16 @@
 <li>[ ] Writting</li>
 <li>[ ] Oral English</li>
 </ul>
+<h4><span id="1118">1118</span><a href="#1118" class="header-anchor">#</a></h4><p>换了一个模型，感觉效果相当好啊。在城市对层面研究，而不是单个城市。果然读论文的重要性。改进的引力模型</p>
+<script type="math/tex; mode=display">
+Ln M_{ij} = a_0+a_1lnp_i+a_2lnp_j+blnd_{ij}+e_{ij}</script><ol>
+<li>Finished talent migration on Figure &amp; Table</li>
+<li>Finished the codes for city pair.</li>
+</ol>
+<h4><span id="1117">1117</span><a href="#1117" class="header-anchor">#</a></h4><p>Literature on migration.</p>
+<p>Choosing what is similar to your search.</p>
+<h4><span id="1116">1116</span><a href="#1116" class="header-anchor">#</a></h4><p>Problem: Tell me why you choose this variables as influenced factor? how to handle 多重共线性？ </p>
+<p>Done: </p>
 <h4><span id="1115">1115</span><a href="#1115" class="header-anchor">#</a></h4><p>How to organize paper for writting(Should one aiming(find what?)) Such as, category(the research content),  finding explanatory variables( the effect of empirical study).  Calssification ( Result+Figue(Table)) + One sentence what you will refer to your paper. Excerpt quotes and sentence patterns(&lt;5 records)+ abstract</p>
 <p>If possible, we could arrange papers at least three times. (The first is category, then is content, finally more detail information)</p>
 <p>I finished GWO model(how to choose variables), but result shows bad. Data problem. just so so.</p>
