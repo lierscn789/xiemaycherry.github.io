@@ -172,6 +172,11 @@
 <li>[ ] Writting</li>
 <li>[ ] Oral English</li>
 </ul>
+<h4><span id="1120">1120</span><a href="#1120" class="header-anchor">#</a></h4><p>OK?</p>
+<p>I choose variable ? Solve this problem</p>
+<p>Great result? Oh Yeah！</p>
+<p>wisestep regression.</p>
+<h4><span id="1119">1119</span><a href="#1119" class="header-anchor">#</a></h4><p>Literure on population mobile(Great). Do not thing without theory and previous research.</p>
 <h4><span id="1118">1118</span><a href="#1118" class="header-anchor">#</a></h4><p>换了一个模型，感觉效果相当好啊。在城市对层面研究，而不是单个城市。果然读论文的重要性。改进的引力模型</p>
 <script type="math/tex; mode=display">
 Ln M_{ij} = a_0+a_1lnp_i+a_2lnp_j+blnd_{ij}+e_{ij}</script><ol>
@@ -1717,7 +1722,38 @@ matplotlib.plot的基础绘图流程：</li>
 <li>有效自由度 - 此值反映了拟合值的方差与系数估计值的偏差之间的折衷，与邻域大小的选择有关。邻域接近无穷大时，每个要素的地理权重都将接近 1，系数估计值与全局 GLR 模型的相应值将非常接近。对于较大的邻域，系数的有效数量将接近实际数量；局部系数估计值将具有较小的方差，但偏差将非常大。相反，邻域变小并接近零时，每个要素的地理权重都将接近零（回归点本身除外）。对于非常小的邻域，系数的有效数量为观测值的数量，局部系数估计值将具有较大方差但偏差较低。该有效数量用于计算多个其他诊断测量值。</li>
 </ul>
 <h3><span id="local-r2">Local R2</span><a href="#local-r2" class="header-anchor">#</a></h3><p>局部的R2，与全局R2的意义是一样的，范围在 0.0 与 1.0 之间，表示局部回归模型与观测所得 y 值的拟合程度。如果值非常低，则表示局部模型性能不佳。对 Local R2进行地图可视化，可以查看哪些位置 GWR 预测较准确和哪些位置不准确。以便为获知可能在回归模型中丢失的重要变量提供相关线索。</p>
-<h3><span id="coefficient">Coefficient</span><a href="#coefficient" class="header-anchor">#</a></h3>]]></content>
+<h3><span id="coefficient">Coefficient</span><a href="#coefficient" class="header-anchor">#</a></h3><h1><span id="stata">Stata</span><a href="#stata" class="header-anchor">#</a></h1><h1><span id="duo-chong-gong-xian-xing">多重共线性</span><a href="#duo-chong-gong-xian-xing" class="header-anchor">#</a></h1><p>两个方法和策略</p>
+<h4><span id="yao-jian-ce">要检测</span><a href="#yao-jian-ce" class="header-anchor">#</a></h4><p>关心变量与多重共线性有关系，关注系数大小</p>
+<p>多重共线性并不会改变OLS估计量BULE的性质，但会使得对系数的估计变得不准确。<br>Stata检查是否存在多重共线的方法：<br>estat vif<br>VIF值越大说明多重共线性问题越严重。一般认为，最大的VIF不超过10，则不存在明显的多重共线性。<br>解决办法：<br>1.如果只关心方程的预测能力，则在整个方程显著的条件下，可以不必关心具体的回归系数。<br>2.增加样本容量，剔除导致多重共线性的变量或者修改模型设定形式。<br>3.对于时间序列样本，通过使用差分模型可以一定程度上消除原模型中的多重共线性。<br>4.岭回归方法。</p>
+<h3><span id="stepwise">stepwise</span><a href="#stepwise" class="header-anchor">#</a></h3><p><strong>regress 因变量 变量1变量2**</strong>…<strong><strong>变量m，beta</strong></strong>stepwise 因变量 变量1变量2<strong><strong>…</strong></strong>变量m，ba forwstfe(#)fs(#)<strong><strong>test表达式</strong></strong>predict 新变量<strong><strong>predict  新变量，resi</strong></strong>predict  新变量，stdp<strong>**predict  新变量，stdr</strong></p>
+<p> <strong>regress</strong>命令表示作线性回归，其子命令beta表示得到的回归系数为标化的回归系数(即：无量纲)。<strong>stepwise</strong>命令表示作逐步线性回归，其子命令：ba表示后退法筛选自变量；form表示向前法筛选自变量；st表示前进后退法筛选变量；fe(#)表示在筛选变量中， 变量选入模型的F统计量的临界值(#)，在STATA中，其缺省值为0.5，最大设置值不要大于4；fs(#)表示在筛选变量中， 变量 从模型中剔除的F统计量的临界值(#)，在STATA中，其缺省值为0.1，最大设置值不要大于4。<strong>test</strong>用于检验回归系数的表达式，如：某两个回归系数是否相等。<strong>predict新变量</strong> 是根据线性回归方程计算每个自变量记录所对应的y值(一些文献上称预测值和期望估计值)。<strong>predict 新变量，resi</strong> 计算残差值。<strong>predict 新变量，stdp</strong></p>
+<p> 是计算因变量y的总体均数估计的标准误(不同的自变量值，该标准误也不同)。<strong>predict 新变量,stdr</strong>  是计算 因变量y的预测值的标准误。</p>
+<p>stepwise y x1 x2 x3, fe(1.5) fs(1.5)</p>
+<p>estat vif<br>stepwise,pr(0.05): reg lnallration hsr  lnpop_x lnpop_y lndis  lnpgdp_x lnpgdp_y  lnfaxi_x lnfaxi_y  lnprgp_x lnprgp_y  lnpwage_x  lnpwage_y  lnmobile_x lnmobile_y lnunemply_x lnunemply_y lnhealth_x lnhealth_y lnedu_x lnedu_y lninfr_x lninfr_y</p>
+<p>指定显著性水平，剔除变量</p>
+<h3><span id="jian-ce">检测</span><a href="#jian-ce" class="header-anchor">#</a></h3><p>1· 相关性分析 自变量的相关系数矩阵R</p>
+<ol>
+<li>vif检测</li>
+</ol>
+<p>　　2.方差膨胀因子（the variance inflation factor，VIF)诊断法：方差膨胀因子表达式为：VIFi=1/（1-R2i)。其中Ri为自变量xi对其余自变量作回归分析的复相关系数。当VIFi很大时，表明自变量间存在多重共线性。该诊断方法也存在临界值不易确定的问题，在应用时须慎重。</p>
+<p>判断：VIFj&gt;10时，说明自变量x与其余自变量之间存在严重的多重共线关系，这种多重共线性可能会过度地影响最小二乘估计值</p>
+<p>　3.容忍值（Tolerance，简记为Tol）法：容忍值实际上是VIF的倒数，即Tol＝1/VIF。其取值在0～1之间，Tol越接近1，说明自变量间的共线性越弱。在应用时一般先预先指定一个Tol值，容忍值小于指定值的变量不能进入方程，从而保证进入方程的变量的相关系数矩阵为非奇异阵，计算结果具有稳定性。但是，有的自变量即使通过了容忍性检验进入方程，仍可导致结果的不稳定。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">estat vif</span><br></pre></td></tr></tbody></table></figure>
+<h2><span id="yi-fang-chai-wen-ti">异方差问题</span><a href="#yi-fang-chai-wen-ti" class="header-anchor">#</a></h2><p>Stata检查是否存在异方差的方法：<br>1.看残差图 【 模型回归之后使用即可】<br>rvfplot（残差与拟合值的散点图）<br>rvpplot（残差与解释变量的的散点图）<br>2.怀特(White,1980）检验【 模型回归之后使用即可】<br>estat imtest,white（怀特检验）whitetst（外源程序，需下载）<br>3.BP(Breusch and Pagan,1979)检验【 模型回归之后使用即可】<br>estat hettest（默认设置使用拟合值y_hat）<br>estat hettest（使用方程邮编的解释变量，而不是y_hat）<br>estat hettest varlist（指定使用某些解释变量）<br>解决办法：<br>1.WLS加权最小二乘法<br>reg y x1 x2 x3 [aw=1/var]<br>eg: reg y x1 x2 x3<br>predict e1,res<br>g e2=e1^2<br>g lne2=log(e2)<br>reg lne2 y,noc<br>predict lne2f<br>g e2f=exp(lne2f)<br>reg y x1 x2 x3 [aw=1/e2f]<br>2.White（1980）<br>eg: reg y x1 x2 x3,robust3. wls0命令、</p>
+<p>第一个问题：使用怀特异方差检验</p>
+<p>第二个问题：使用异方差稳健标准误</p>
+<p>ps：不管有没有异方差，使用异方差稳健标准误总不会有坏处</p>
+<p>检测</p>
+<p><strong>estat imtest,white</strong></p>
+<p>对于线性模型来说，异方差也不算什么大问题。</p>
+<p>主要有两种处理方法：<strong><em>①“OLS+异方差稳健标准误”②加权最小二乘法（WLS）与可行加权最小二乘法（FWLS）\</em></strong></p>
+<p>大多情况下可以直接用“OLS+异方差稳健标准误”来解决，Stata里在回归语句后面加 ,robust即可。</p>
+<p><strong><em>常规OLS的命令为：\</em></strong></p>
+<p><strong><em>reg y A B C（ABC为三个解释变量）\</em></strong></p>
+<p><strong><em>“异方差稳健标准误OLS”的命令为：\</em></strong></p>
+<p><strong><em>reg y A B C,robust\</em></strong></p>
+<h2><span id="xu-lie-xiang-guan-wen-ti">序列相关问题</span><a href="#xu-lie-xiang-guan-wen-ti" class="header-anchor">#</a></h2><p>Stata检查是否存在序列相关的方法：<br>1.画图<br>在做完回归之后，先生成残差项e<br>scatter e L.e<br>2.BG检验<br>estat bgodfrey（默认滞后阶数为1）<br>3.Ljung-Box Q检验<br>eg: reg y x1 x2 x3<br>predict e,res<br>wntestq e<br>3.DW检验<br>estat dwatson解决办法：<br>1.Newey稳健性标准差<br>newey y x,lag(p) (滞后阶数必选)<br>2.可行广义最小二乘法（FGLS）<br>prais y x<br>prais y x,corc</p>
+]]></content>
       <tags>
         <tag>回归分析</tag>
       </tags>
