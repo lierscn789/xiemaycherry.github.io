@@ -172,6 +172,8 @@
 <li>[ ] Writting</li>
 <li>[ ] Oral English</li>
 </ul>
+<h4><span id="1121">1121</span><a href="#1121" class="header-anchor">#</a></h4><p>下午加晚上完成了报告，我操</p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/MyBlog\MyBlog\hexo\source\_posts\学习Daily\image-20201121230111241.png" alt="image-20201121230111241"></p>
 <h4><span id="1120">1120</span><a href="#1120" class="header-anchor">#</a></h4><p>OK?</p>
 <p>I choose variable ? Solve this problem</p>
 <p>Great result? Oh Yeah！</p>
@@ -3154,6 +3156,18 @@ L_1(x_i,x_j) = max(|x_i^{(l)}-x_j^{(l)}|)</script><h2><span id="k-zhi-de-xuan-ze
 <p>模型的形式</p>
 <p>估计方法（OLS,GLS)</p>
 <p>标准稳健性偏误</p>
+<h2><span id="duo-chong-gong-xian-xing">多重共线性</span><a href="#duo-chong-gong-xian-xing" class="header-anchor">#</a></h2><p>0.8 </p>
+<h2><span id="xiang-guan-xing-xi-shu">相关性系数</span><a href="#xiang-guan-xing-xi-shu" class="header-anchor">#</a></h2><h2><span id="hui-gui-jie-guo-fen-xi">回归结果分析</span><a href="#hui-gui-jie-guo-fen-xi" class="header-anchor">#</a></h2><h2><span id="fang-chai-peng-zhang-yin-zi-vif">方差膨胀因子 VIF</span><a href="#fang-chai-peng-zhang-yin-zi-vif" class="header-anchor">#</a></h2><p><img src="/2020/09/13/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/Users\ADMIN\AppData\Roaming\Typora\typora-user-images\image-20201121093752887.png" alt="image-20201121093752887"></p>
+<ol>
+<li>删除支配变量</li>
+<li>增加样本容量</li>
+<li><p>删除多余变量</p>
+</li>
+<li><p>主成分分析</p>
+</li>
+<li>因子分析</li>
+<li>如果不严重，可以不处理。除非是出现了严重的问题（符号问题)<br>7.</li>
+</ol>
 ]]></content>
       <categories>
         <category>科研</category>
