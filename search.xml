@@ -19,42 +19,32 @@
   <entry>
     <title>学习の历程</title>
     <url>/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/</url>
-    <content><![CDATA[<p>记录生活</p>
-<a id="more"></a>
-<h2><span id="202011-paper-paper-paper">202011 Paper Paper Paper</span><a href="#202011-paper-paper-paper" class="header-anchor">#</a></h2><p><strong>Week 1: HSR results</strong></p>
-<ol>
-<li><p>Figure &amp; Table</p>
-<ol>
-<li>Chinese report</li>
-</ol>
-</li>
-</ol>
-<p><strong>Week 2:  Talents flow pattern</strong></p>
-<p><strong>Data</strong>(Netwrok &amp; indicator)</p>
-<ol>
-<li><p><strong>Data prepare(file)（half-day)</strong></p>
-<p>resume data during 2014-2016 year（一定要先把数据准备好)</p>
-</li>
-</ol>
-<p><strong>Method（four methodes)</strong></p>
-<ol>
-<li><p><strong>Distribution Feature</strong></p>
-<ol>
-<li><strong>Description of talents network(distribution feature )</strong></li>
-<li><strong>page ranking algorithm(node importance)</strong></li>
-</ol>
-</li>
-</ol>
-<p>《Spatiotemporal Patterns of Population Mobility and Its Determinants in Chinese Cities Based on Travel Big Data  》</p>
-<ol>
-<li><p><strong>spatial correlation analysis Spatial autocorrelation model</strong>  （莫兰指数)</p>
-<p>《Understanding regional talent attraction and its influencing factors in China: From the perspective of spatiotemporal pattern evolution  》</p>
-</li>
-<li><p><strong>GWR mode (determining factors)</strong></p>
-<p>《The correlation between HSR construction and economic development – Empirical study of Chinese cities  》</p>
-<p>《Spatially varying patterns of afforestation/reforestation and socioeconomic factors in China: a geographically weighted regression approach 》</p>
-</li>
-</ol>
+    <content><![CDATA[<a id="more"></a>
+<p>记录生活！</p>
+<p>从今天起，认真努力的工作。早起，早睡。</p>
+<h2><span id="202011-paper-paper-paper">202011 Paper Paper Paper</span><a href="#202011-paper-paper-paper" class="header-anchor">#</a></h2><h3><span id="planning-of-week-47-be-done">planning of week 47 be done!~</span><a href="#planning-of-week-47-be-done" class="header-anchor">#</a></h3><ul>
+<li>[ ] complete talent &amp; economy report( Monday 1)</li>
+<li>[ ] Reading</li>
+<li>[ ] English</li>
+<li>[ ] Writting</li>
+<li>[ ] Supplement the literature review on high-speed rail</li>
+</ul>
+<hr>
+<h4><span id="1113">1113</span><a href="#1113" class="header-anchor">#</a></h4><p>in the morning, I finish a Chinese report. (very quick)</p>
+<hr>
+<p>开启下一段关卡了</p>
+<p>​    Top 1. oral English &amp; academic writing</p>
+<p>​    Top 2.  Reading. </p>
+<p>​    Top 3. Value</p>
+<hr>
+<p>我猜测我已经度过了最艰难的关，主要是解决如下问题：</p>
+<pre><code>1. Literature:  although I can tell a complete story, I know how to organize story line.
+ 2. Writting  in Chinese for a report. 
+ 3. Plot in python &amp; origin. I speed more time on it. I think it deserve .
+ 4. Analysis.  Beginning to reveal result.
+</code></pre><p>In my research field, Plotting is the best way to show you finding.</p>
+<p>recently,  我忽略给老师及时报告结在。只顾自己什么都prepare well, well, well.</p>
+<hr>
 <div class="table-container">
 <table>
 <thead>
@@ -172,8 +162,16 @@
 <li>[ ] Writting</li>
 <li>[ ] Oral English</li>
 </ul>
+<h4><span id="1122">1122</span><a href="#1122" class="header-anchor">#</a></h4><p>完成数据和报告部分。应该是可以直接用的那种。</p>
+<p>现在数据，异常处理。基本没有什么问题了。</p>
+<p>how to document notes(Latex+bib document)</p>
+<ol>
+<li>literature review</li>
+<li>Result/Conclusion</li>
+<li>systemic arrangement</li>
+</ol>
 <h4><span id="1121">1121</span><a href="#1121" class="header-anchor">#</a></h4><p>下午加晚上完成了报告，我操</p>
-<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/MyBlog\MyBlog\hexo\source\_posts\学习Daily\image-20201121230111241.png" alt="image-20201121230111241"></p>
+<p><img src="/2019/02/22/%E5%AD%A6%E4%B9%A0Daily/image-20201121230111241.png" alt="image-20201121230111241"></p>
 <h4><span id="1120">1120</span><a href="#1120" class="header-anchor">#</a></h4><p>OK?</p>
 <p>I choose variable ? Solve this problem</p>
 <p>Great result? Oh Yeah！</p>
@@ -1648,6 +1646,17 @@ matplotlib.plot的基础绘图流程：</li>
       <tags>
         <tag>规划</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>科研之Latex</title>
+    <url>/2020/11/22/%E7%A7%91%E7%A0%94%E4%B9%8BLatex/</url>
+    <content><![CDATA[<h1><span id="biao-ge-ji-zhun-kong-zhi">表格基准控制</span><a href="#biao-ge-ji-zhun-kong-zhi" class="header-anchor">#</a></h1><h2><span id="ye-mian-fang-xiang-kong-zhi">页面方向控制</span><a href="#ye-mian-fang-xiang-kong-zhi" class="header-anchor">#</a></h2><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">\usepackage{lscape}</span><br><span class="line"></span><br><span class="line">\begin{landscape}</span><br><span class="line">large table or figure</span><br><span class="line">\end{landscape}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h2><span id="xian-he-zi-dong-huan-xing">线和自动换行</span><a href="#xian-he-zi-dong-huan-xing" class="header-anchor">#</a></h2><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">\begin{table}[!htbp]</span><br><span class="line">\begin{tabular}{|p{0.3\textwidth}&lt;{\centering}|p{0.3\textwidth}&lt;{\centering}|p{0.3\textwidth}&lt;{\centering}}</span><br><span class="line">\toprule</span><br><span class="line"></span><br><span class="line">\bottomrule</span><br><span class="line">\end{tabular}</span><br><span class="line">\end{table}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h1><span id="can-kao-wen-xian">参考文献</span><a href="#can-kao-wen-xian" class="header-anchor">#</a></h1><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">T + B +T +T</span><br><span class="line">要把文献打开</span><br><span class="line"></span><br><span class="line">%\usepackage{cite}</span><br><span class="line">\usepackage[comma, sort&amp;compress]{natbib}</span><br><span class="line">%\usepackage[style=alphabetic,maxnames=4,minnames=3,maxbibnames=99]{biblatex}</span><br><span class="line">%\usepackage[square,sort,comma,numbers]{natbib}</span><br><span class="line">%\usepackage[authoryear,round,longnamesfirst]{natbib}</span><br><span class="line">\bibliographystyle{plainnat}</span><br><span class="line">\bibliography{refer}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">1. plain，按字母的顺序排列，比较次序为作者、年度和标题；</span><br><span class="line">2. unsrt，样式同plain，只是按照引用的先后排序；</span><br><span class="line">3. alpha，用作者名首字母+年份后两位作标号，以字母顺序排序；</span><br><span class="line">4. abbrv，类似plain，将月份全拼改为缩写，更显紧凑；</span><br><span class="line">5. ieeetr，国际电气电子工程师协会期刊样式；</span><br><span class="line">6. acm，美国计算机学会期刊样式；</span><br><span class="line">7. siam，美国工业和应用数学学会期刊样式；</span><br><span class="line">8. apalike，美国心理学学会期刊样式；</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">Step6:生成PDF的过程；</span><br><span class="line">1.用Latex编译Latex文档；</span><br><span class="line">2.用BibTex编译bib文档；</span><br><span class="line">3.在用Latex编译Latex文档；</span><br><span class="line">4.通过dviPDF查看PDF。</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">@article{rogers1978model,</span><br><span class="line">  title={Model migration schedules and their applications},</span><br><span class="line">  author={Rogers, Andrei and Raquillet, Richard and Castro, Luis J},</span><br><span class="line">  journal={Environment and Planning A},</span><br><span class="line">  volume={10},</span><br><span class="line">  number={5},</span><br><span class="line">  pages={475--502},</span><br><span class="line">  year={1978},</span><br><span class="line">  publisher={SAGE Publications Sage UK: London, England}</span><br><span class="line">}</span><br><span class="line">@book{rogers1984migration,</span><br><span class="line">  title={Migration, urbanization, and spatial population dynamics},</span><br><span class="line">  author={Rogers, Andrei and Castro, Luis J},</span><br><span class="line">  year={1984},</span><br><span class="line">  publisher={Westview Press}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
   </entry>
   <entry>
     <title>数据分析-数据归一化和标准化</title>

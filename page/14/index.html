@@ -175,6 +175,132 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://xiemaycherry.github.io/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="XieMay">
+      <meta itemprop="description" content="要拼搏努力，就是要光鲜亮丽">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">deep_learning.ai深度学习笔记<Andrew Ng></a>
+        </h2>
+
+        <div class="post-meta">
+			
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-11 09:15:23" itemprop="dateCreated datePublished" datetime="2019-04-11T09:15:23+08:00">2019-04-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-05 21:47:45" itemprop="dateModified" datetime="2020-10-05T21:47:45+08:00">2020-10-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E3%81%AE%E5%8E%86%E7%A8%8B-Journal-of-Studying/" itemprop="url" rel="index"><span itemprop="name">学习の历程(Journal of Studying)</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1><span id="c5-sequence-models">C5: Sequence Models</span><a href="#c5-sequence-models" class="header-anchor">#</a></h1><h2><span id="w1-recurrent-neural-networks-xun-huan-xu-lie-mo-xing">W1 : Recurrent Neural Networks (循环序列模型)</span><a href="#w1-recurrent-neural-networks-xun-huan-xu-lie-mo-xing" class="header-anchor">#</a></h2><h3><span id="l1-why-sequence-models">L1 ： Why Sequence Models?</span><a href="#l1-why-sequence-models" class="header-anchor">#</a></h3><p>循环神经网络（<strong>RNN</strong>）之类的模型在语音识别、自然语言处理和其他领域中引起变革。</p>
+<p>序列模型的列子</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c11.png" alt></p>
+<h3><span id="l2-notation-shu-xue-fu-hao">L2 : Notation 数学符号</span><a href="#l2-notation-shu-xue-fu-hao" class="header-anchor">#</a></h3><p>NLP</p>
+<p>我们用$X^{(i)}$来表示第个i训练样本，所以为了指代第个t元素，或者说是训练样本i的序列中第t个元素用$X^{(i)}<t>$这个符号来表示。如果是序列长度$T_x$，那么你的训练集里不同的训练样本就会有不同的长度，所以$T_x^{(i)}$就代表第个训练样本的输入序列长度。同样$y^{(i)}<t>$代表第i个训练样本中第t个元素，$T_y^{(i)}$就是第i个训练样本的输出序列的长度。</t></t></p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c12.png" alt></p>
+<p>预先有一个词典</p>
+<h3><span id="l3-recurrent-neural-network-model-xun-huan-shen-jing-wang-luo-mo-xing">L3 : Recurrent Neural Network Model (循环神经网络模型)</span><a href="#l3-recurrent-neural-network-model-xun-huan-shen-jing-wang-luo-mo-xing" class="header-anchor">#</a></h3><p>现在我们讨论一下怎样才能建立一个模型，建立一个神经网络来学习X到Y的映射</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c13.png" alt></p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c14.png" alt></p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c15.png" alt></p>
+<p>$a^{&lt;0&gt;}$通常 是零向量<!--0--></p>
+<p>N模型包含三类权重系数，分别是Wax，Waa，Wya。且不同元素之间同一位置共享同一权重系数。</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c16.png" alt></p>
+<p>RNN的正向传播（Forward Propagation）过程为：</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c17.png" alt></p>
+<p>循环神经网络用的激活函数经常是<strong>tanh</strong>，不过有时候也会用<strong>ReLU</strong>，但是<strong>tanh</strong>是更通常的选择，我们有其他方法来避免梯度消失问题，我们将在之后进行讲述。选用哪个激活函数是取决于你的输出y，如果它是一个二分问题，那么我猜你会用<strong>sigmoid</strong>函数作为激活函数，如果是k类别分类问题的话，那么可以选用<strong>softmax</strong>作为激活函数。不过这里激活函数的类型取决于你有什么样类型的输出y，对于命名实体识别来说y只可能是0或者1，那我猜这里第二个激活函数g可以是<strong>sigmoid</strong>激活函数。</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c18.png" alt></p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c19.png" alt></p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c110.png" alt></p>
+<h3><span id="c4-backpropagation-through-time-tong-guo-shi-jian-de-fan-xiang-chuan-bo">c4: Backpropagation through time ( 通过时间的反向传播)</span><a href="#c4-backpropagation-through-time-tong-guo-shi-jian-de-fan-xiang-chuan-bo" class="header-anchor">#</a></h3><p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c111.png" alt></p>
+<p>参数的关系<img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c112.png" alt>*</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c113.png" alt></p>
+<p>单个元素的Loss function:</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c114.png" alt></p>
+<p>该样本所有元素的Loss function为：</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c115.png" alt></p>
+<p>然后，反向传播（Backpropagation）过程就是从右到左分别计算L(y^,y)对参数Wa，Wy，ba，by的偏导数。思路与做法与标准的神经网络是一样的。一般可以通过成熟的深度学习框架自动求导，例如PyTorch、Tensorflow等。这种从右到左的求导过程被称为Backpropagation through time</p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c116.png" alt></p>
+<h3><span id="l5-different-types-of-rnns-bu-tong-lei-xing-de-xun-huan-shen-jing-wang-luo">L5: Different types of <strong>RNN</strong>s (不同类型的循环神经网络)</span><a href="#l5-different-types-of-rnns-bu-tong-lei-xing-de-xun-huan-shen-jing-wang-luo" class="header-anchor">#</a></h3><p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c117.png" alt></p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c118.png" alt></p>
+<p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c119.png" alt></p>
+<h3><span id="l6-language-model-and-sequence-generation-yu-yan-mo-xing-he-xu-lie-sheng-cheng">L6 : Language model and sequence generation (语言模型和序列生成)</span><a href="#l6-language-model-and-sequence-generation-yu-yan-mo-xing-he-xu-lie-sheng-cheng" class="header-anchor">#</a></h3><p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c120.png" alt></p>
+<h3><span id="l7-sampling-novel-sequences-dui-xin-xu-lie-cai-yang">L7 : Sampling novel sequences (对新序列采样)</span><a href="#l7-sampling-novel-sequences-dui-xin-xu-lie-cai-yang" class="header-anchor">#</a></h3><p><img src="/2019/04/11/deep-learning-ai%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/c121.png" alt></p>
+<h3><span id="vanishing-gradients-with-rnns-xun-huan-shen-jing-wang-luo-de-ti-du-xiao-shi">Vanishing gradients with <strong>RNN</strong>s (循环神经网络的梯度消失)</span><a href="#vanishing-gradients-with-rnns-xun-huan-shen-jing-wang-luo-de-ti-du-xiao-shi" class="header-anchor">#</a></h3><p>首先从左到右前向传播，然后反向传播。但是反向传播会很困难，因为同样的梯度消失的问题，后面层的输出误差（上图编号6所示）很难影响前面层（上图编号7所示的层）的计算。这就意味着，实际上很难让一个神经网络能够意识到它要记住看到的是单数名词还是复数名词，然后在序列后面生成依赖单复数形式的<strong>was</strong>或者<strong>were</strong>。而且在英语里面，这中间的内容（上图编号8所示）可以任意长，对吧？所以你需要长时间记住单词是单数还是复数，这样后面的句子才能用到这些信息。也正是这个原因，所以基本的<strong>RNN</strong>模型会有很多局部影响</p>
+<p><a target="_blank" rel="noopener" href="http://www.ai-start.com/dl2017/html/lesson5-week1.html">http://www.ai-start.com/dl2017/html/lesson5-week1.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzIwOTc2MTUyMg==&amp;mid=2247484029&amp;idx=1&amp;sn=c93b5eddec33dc29dc172a5ea0d76822&amp;chksm=976fa7e0a0182ef61e36d1c32aa0706c4e81e1762a7ee2554165beecde929b72cf026c5b7a64&amp;scene=21#wechat_redirect">https://mp.weixin.qq.com/s?__biz=MzIwOTc2MTUyMg==&amp;mid=2247484029&amp;idx=1&amp;sn=c93b5eddec33dc29dc172a5ea0d76822&amp;chksm=976fa7e0a0182ef61e36d1c32aa0706c4e81e1762a7ee2554165beecde929b72cf026c5b7a64&amp;scene=21#wechat_redirect</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://xiemaycherry.github.io/2019/04/03/deeplearningvideo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -763,122 +889,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://xiemaycherry.github.io/2019/03/23/scikit-learn/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="XieMay">
-      <meta itemprop="description" content="要拼搏努力，就是要光鲜亮丽">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="welcome">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/03/23/scikit-learn/" class="post-title-link" itemprop="url">scikit-learn</a>
-        </h2>
-
-        <div class="post-meta">
-			
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-03-23 18:39:47" itemprop="dateCreated datePublished" datetime="2019-03-23T18:39:47+08:00">2019-03-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-15 11:08:16" itemprop="dateModified" datetime="2019-11-15T11:08:16+08:00">2019-11-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>6.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1><span id><!-- more  --></span><a href="#" class="header-anchor">#</a></h1><h1><span id="cross-validation-evaluating-estimator-performancep">Cross-validation: evaluating estimator performance</span><a href="#cross-validation-evaluating-estimator-performancep" class="header-anchor">#</a></h1><p><img src="https://scikit-learn.org/stable/_images/grid_search_workflow.png" alt="Grid Search Workflow"></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">from sklearn.model_selection import train_test_split</span><br><span class="line"></span><br><span class="line"># 调用train_test_split函数 自动划分数据集 40%for testing</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(iris.data,iris.target, test_size=0.4, random_state=0)</span><br></pre></td></tr></tbody></table></figure>
-<h2><span id="corss-validation">corss validation</span><a href="#corss-validation" class="header-anchor">#</a></h2><p><img src="https://scikit-learn.org/stable/_images/grid_search_cross_validation.png" alt="../_images/grid_search_cross_validation.png"></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from sklearn.model_selection import cross_validate</span><br><span class="line">from sklearn.metrics import recall_score</span><br><span class="line">scoring = ['precision_macro', 'recall_macro']</span><br><span class="line">clf = svm.SVC(kernel='linear', C=1, random_state=0)</span><br><span class="line">scores = cross_validate(clf, iris.data, iris.target, scoring=scoring,</span><br><span class="line">                        cv=5, return_train_score=False)</span><br><span class="line">sorted(scores.keys())</span><br></pre></td></tr></tbody></table></figure>
-<h2><span id="cross-validation-of-time-series-data">Cross validation of time series data</span><a href="#cross-validation-of-time-series-data" class="header-anchor">#</a></h2><p><img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_cv_indices_0101.png" alt="../_images/sphx_glr_plot_cv_indices_0101.png"></p>
-<h1><span id="tuning-the-hyper-parameters-of-an-estimator">Tuning the hyper-parameters of an estimator</span><a href="#tuning-the-hyper-parameters-of-an-estimator" class="header-anchor">#</a></h1><p>A search consists of:</p>
-<ul>
-<li><p>an estimator (regressor or classifier such as <code>sklearn.svm.SVC()</code>);</p>
-</li>
-<li><p>a parameter space;</p>
-</li>
-<li><p>a method for searching or sampling candidates;</p>
-</li>
-<li><p>a cross-validation scheme; and</p>
-</li>
-<li><p>a <a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/grid_search.html#gridsearch-scoring">score function</a>.</p>
-</li>
-</ul>
-<h2><span id="grid-search">Grid Search</span><a href="#grid-search" class="header-anchor">#</a></h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">param_grid = [</span><br><span class="line">  {'C': [1, 10, 100, 1000], 'kernel': ['linear']},</span><br><span class="line">  {'C': [1, 10, 100, 1000], 'gamma': [0.001, 0.0001], 'kernel': ['rbf']},</span><br><span class="line"> ]</span><br></pre></td></tr></tbody></table></figure>
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC</span><br><span class="line"></span><br><span class="line">print(__doc__)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading the Digits dataset</span></span><br><span class="line">digits = datasets.load_digits()</span><br><span class="line"></span><br><span class="line"><span class="comment"># To apply an classifier on this data, we need to flatten the image, to</span></span><br><span class="line"><span class="comment"># turn the data in a (samples, feature) matrix:</span></span><br><span class="line">n_samples = len(digits.images)</span><br><span class="line">X = digits.images.reshape((n_samples, <span class="number">-1</span>))</span><br><span class="line">y = digits.target</span><br><span class="line"></span><br><span class="line"><span class="comment"># Split the dataset in two equal parts</span></span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(</span><br><span class="line">    X, y, test_size=<span class="number">0.5</span>, random_state=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Set the parameters by cross-validation</span></span><br><span class="line">tuned_parameters = [{<span class="string">'kernel'</span>: [<span class="string">'rbf'</span>], <span class="string">'gamma'</span>: [<span class="number">1e-3</span>, <span class="number">1e-4</span>],</span><br><span class="line">                     <span class="string">'C'</span>: [<span class="number">1</span>, <span class="number">10</span>, <span class="number">100</span>, <span class="number">1000</span>]},</span><br><span class="line">                    {<span class="string">'kernel'</span>: [<span class="string">'linear'</span>], <span class="string">'C'</span>: [<span class="number">1</span>, <span class="number">10</span>, <span class="number">100</span>, <span class="number">1000</span>]}]</span><br><span class="line"></span><br><span class="line">scores = [<span class="string">'precision'</span>, <span class="string">'recall'</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> score <span class="keyword">in</span> scores:</span><br><span class="line">    print(<span class="string">"# Tuning hyper-parameters for %s"</span> % score)</span><br><span class="line">    print()</span><br><span class="line"></span><br><span class="line">    clf = GridSearchCV(SVC(), tuned_parameters, cv=<span class="number">5</span>,</span><br><span class="line">                       scoring=<span class="string">'%s_macro'</span> % score)</span><br><span class="line">    clf.fit(X_train, y_train)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"Best parameters set found on development set:"</span>)</span><br><span class="line">    print()</span><br><span class="line">    print(clf.best_params_)</span><br><span class="line">    print()</span><br><span class="line">    print(<span class="string">"Grid scores on development set:"</span>)</span><br><span class="line">    print()</span><br><span class="line">    means = clf.cv_results_[<span class="string">'mean_test_score'</span>]</span><br><span class="line">    stds = clf.cv_results_[<span class="string">'std_test_score'</span>]</span><br><span class="line">    <span class="keyword">for</span> mean, std, params <span class="keyword">in</span> zip(means, stds, clf.cv_results_[<span class="string">'params'</span>]):</span><br><span class="line">        print(<span class="string">"%0.3f (+/-%0.03f) for %r"</span></span><br><span class="line">              % (mean, std * <span class="number">2</span>, params))</span><br><span class="line">    print()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"Detailed classification report:"</span>)</span><br><span class="line">    print()</span><br><span class="line">    print(<span class="string">"The model is trained on the full development set."</span>)</span><br><span class="line">    print(<span class="string">"The scores are computed on the full evaluation set."</span>)</span><br><span class="line">    print()</span><br><span class="line">    y_true, y_pred = y_test, clf.predict(X_test)</span><br><span class="line">    print(classification_report(y_true, y_pred))</span><br><span class="line">    print()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Note the problem is too easy: the hyperparameter plateau is too flat and the</span></span><br><span class="line"><span class="comment"># output model is the same for precision and recall with ties in quality.</span></span><br></pre></td></tr></tbody></table></figure>
-<h2><span id="randomized-parameter-optimization">Randomized Parameter Optimization</span><a href="#randomized-parameter-optimization" class="header-anchor">#</a></h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">print(__doc__)</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> randint <span class="keyword">as</span> sp_randint</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> RandomizedSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_digits</span><br><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"></span><br><span class="line"><span class="comment"># get some data</span></span><br><span class="line">digits = load_digits()</span><br><span class="line">X, y = digits.data, digits.target</span><br><span class="line"></span><br><span class="line"><span class="comment"># build a classifier</span></span><br><span class="line">clf = RandomForestClassifier(n_estimators=<span class="number">20</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Utility function to report best scores</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">report</span>(<span class="params">results, n_top=<span class="number">3</span></span>):</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n_top + <span class="number">1</span>):</span><br><span class="line">        candidates = np.flatnonzero(results[<span class="string">'rank_test_score'</span>] == i)</span><br><span class="line">        <span class="keyword">for</span> candidate <span class="keyword">in</span> candidates:</span><br><span class="line">            print(<span class="string">"Model with rank: {0}"</span>.format(i))</span><br><span class="line">            print(<span class="string">"Mean validation score: {0:.3f} (std: {1:.3f})"</span>.format(</span><br><span class="line">                  results[<span class="string">'mean_test_score'</span>][candidate],</span><br><span class="line">                  results[<span class="string">'std_test_score'</span>][candidate]))</span><br><span class="line">            print(<span class="string">"Parameters: {0}"</span>.format(results[<span class="string">'params'</span>][candidate]))</span><br><span class="line">            print(<span class="string">""</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># specify parameters and distributions to sample from</span></span><br><span class="line">param_dist = {<span class="string">"max_depth"</span>: [<span class="number">3</span>, <span class="literal">None</span>],</span><br><span class="line">              <span class="string">"max_features"</span>: sp_randint(<span class="number">1</span>, <span class="number">11</span>),</span><br><span class="line">              <span class="string">"min_samples_split"</span>: sp_randint(<span class="number">2</span>, <span class="number">11</span>),</span><br><span class="line">              <span class="string">"bootstrap"</span>: [<span class="literal">True</span>, <span class="literal">False</span>],</span><br><span class="line">              <span class="string">"criterion"</span>: [<span class="string">"gini"</span>, <span class="string">"entropy"</span>]}</span><br><span class="line"></span><br><span class="line"><span class="comment"># run randomized search</span></span><br><span class="line">n_iter_search = <span class="number">20</span></span><br><span class="line">random_search = RandomizedSearchCV(clf, param_distributions=param_dist,</span><br><span class="line">                                   n_iter=n_iter_search, cv=<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">start = time()</span><br><span class="line">random_search.fit(X, y)</span><br><span class="line">print(<span class="string">"RandomizedSearchCV took %.2f seconds for %d candidates"</span></span><br><span class="line">      <span class="string">" parameter settings."</span> % ((time() - start), n_iter_search))</span><br><span class="line">report(random_search.cv_results_)</span><br><span class="line"></span><br><span class="line"><span class="comment"># use a full grid over all parameters</span></span><br><span class="line">param_grid = {<span class="string">"max_depth"</span>: [<span class="number">3</span>, <span class="literal">None</span>],</span><br><span class="line">              <span class="string">"max_features"</span>: [<span class="number">1</span>, <span class="number">3</span>, <span class="number">10</span>],</span><br><span class="line">              <span class="string">"min_samples_split"</span>: [<span class="number">2</span>, <span class="number">3</span>, <span class="number">10</span>],</span><br><span class="line">              <span class="string">"bootstrap"</span>: [<span class="literal">True</span>, <span class="literal">False</span>],</span><br><span class="line">              <span class="string">"criterion"</span>: [<span class="string">"gini"</span>, <span class="string">"entropy"</span>]}</span><br><span class="line"></span><br><span class="line"><span class="comment"># run grid search</span></span><br><span class="line">grid_search = GridSearchCV(clf, param_grid=param_grid, cv=<span class="number">5</span>)</span><br><span class="line">start = time()</span><br><span class="line">grid_search.fit(X, y)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"GridSearchCV took %.2f seconds for %d candidate parameter settings."</span></span><br><span class="line">      % (time() - start, len(grid_search.cv_results_[<span class="string">'params'</span>])))</span><br><span class="line">report(grid_search.cv_results_)</span><br></pre></td></tr></tbody></table></figure>
-<p>  step1： 交叉验证（评价模型）</p>
-<p>step2: 超参数选择，每一组参数：对应一次交叉验证</p>
-<p>step 3: 集成学习</p>
-<p>也可进行参数的调解</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">from sklearn.model_selection import cross_val_score</span><br><span class="line">from sklearn.datasets import load_iris</span><br><span class="line">from sklearn.ensemble import AdaBoostClassifier</span><br><span class="line"></span><br><span class="line">iris = load_iris()</span><br><span class="line">clf = AdaBoostClassifier(n_estimators=100)</span><br><span class="line">scores = cross_val_score(clf, iris.data, iris.target, cv=5)</span><br><span class="line">scores.mean()                             </span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">from sklearn import datasets</span><br><span class="line">from sklearn.tree import DecisionTreeClassifier</span><br><span class="line">from sklearn.neighbors import KNeighborsClassifier</span><br><span class="line">from sklearn.svm import SVC</span><br><span class="line">from itertools import product</span><br><span class="line">from sklearn.ensemble import VotingClassifier</span><br><span class="line"></span><br><span class="line"># Loading some example data</span><br><span class="line">iris = datasets.load_iris()</span><br><span class="line">X = iris.data[:, [0, 2]]</span><br><span class="line">y = iris.target</span><br><span class="line"></span><br><span class="line"># Training classifiers</span><br><span class="line">clf1 = DecisionTreeClassifier(max_depth=4)</span><br><span class="line">clf2 = KNeighborsClassifier(n_neighbors=7)</span><br><span class="line">clf3 = SVC(gamma='scale', kernel='rbf', probability=True)</span><br><span class="line">eclf = VotingClassifier(estimators=[('dt', clf1), ('knn', clf2), ('svc', clf3)],</span><br><span class="line">                        voting='soft', weights=[2, 1, 2])</span><br><span class="line"></span><br><span class="line">clf1 = clf1.fit(X, y)</span><br><span class="line">clf2 = clf2.fit(X, y)</span><br><span class="line">clf3 = clf3.fit(X, y)</span><br><span class="line">eclf = eclf.fit(X, y)</span><br></pre></td></tr></tbody></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -948,7 +958,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">83</span>
+          <span class="site-state-item-count">84</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1006,19 +1016,19 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">336k</span>
+    <span title="站点总字数">338k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">5:06</span>
+    <span title="站点阅读时长">5:07</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共132k字</span>
+  <span class="post-count">博客全站共132.4k字</span>
 </div>
         
 <div class="busuanzi-count">
@@ -1140,11 +1150,11 @@
     MathJax.texReset();
     MathJax.typeset();
   }
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
     
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
 </html>
